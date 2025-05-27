@@ -1,0 +1,109 @@
+/* Estilos específicos para a página de estudos bíblicos */
+
+.estudos-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/estudos-bg.jpg');
+    background-position: center;
+}
+
+.agenda {
+    background-color: #121212;
+    padding: 60px 0;
+}
+
+.agenda-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.estudo-item {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.estudo-item:hover {
+    transform: translateY(-5px);
+}
+
+.estudo-data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #4db6ff;
+    font-weight: 500;
+}
+
+.estudo-data i {
+    margin-right: 10px;
+    color: #ff4d4d;
+}
+
+.estudo-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.estudo-info p {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .estudo-item {
+        padding: 15px;
+    }
+    
+    .estudo-info h3 {
+        font-size: 18px;
+    }
+    
+    .estudo-info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .agenda-list {
+        gap: 15px;
+    }
+    
+    .estudo-item {
+        padding: 12px;
+    }
+    
+    .estudo-data {
+        font-size: 14px;
+    }
+    
+    .estudo-info h3 {
+        font-size: 16px;
+    }
+    
+    .estudo-info p {
+        font-size: 13px;
+    }
+}
