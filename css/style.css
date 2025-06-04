@@ -200,6 +200,33 @@ footer {
     align-items: center;
 }
 
+/* Navegação no rodapé - NOVO ESTILO */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    display: inline-block;
+    background-color: #212121;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #3da5f0;
+}
+
+.nav-links a.active {
+    background-color: #4db6ff;
+    color: #ffffff;
+}
+
 .social-links {
     display: flex;
     margin-bottom: 20px;
@@ -254,6 +281,11 @@ footer {
     section h2 {
         font-size: 24px;
     }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -286,5 +318,10 @@ footer {
     
     .contato-link i {
         font-size: 18px;
+    }
+    
+    .nav-links a {
+        padding: 8px 16px;
+        font-size: 14px;
     }
 }
